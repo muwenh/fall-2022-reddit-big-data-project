@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  	<title>502 Project Milestone 2 - Group 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/style.css"> 
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" >
+				<div class="p-4 pt-5" >
+		  		<p style="font-size:20px">502 Final Project Milestone 2</p>
+          <p>Group Member: Shide Pu, Muwen Huang, Hongyu Zhao, Chenyue Jin</p>
+          <div style="position: fixed;">
+	        <ul class="list-unstyled components mb-5">
+	          <li><a href="./index.html">Home</a></li>
+            <li><a href="./eda.html">Exploratory Data Analysis</a></li>
+            <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">NLP and external data overlay &nbsp &nbsp</a>
+	            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li><a href="./nlp.html#Coding Notebooks">Coding Notebooks</a></li>
+                <li><a href="./nlp.html#Executive summary">Executive summary</a></li>
+                <li><a href="./nlp.html#Analysis report">Analysis report</a></li>
+                <li><a href="./nlp.html#External Data">External Data</a></li>
+	            </ul>
+	          </li>
+	          <li><a href="./ml.html">Machine Learning</a></li>
+	          <li><a href="./conclusion.html">Conclusion</a></li>
+	        </ul></div>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+        <div style="margin:10px 15px 0px 0px;"><a name="Coding Notebooks"> </a></div>
+      <div id="content" class="p-4 p-md-5" >
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./eda.html">EDA</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./nlp.html">NLP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ml.html">ML</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./conclusion.html">Conclusions</a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+
+        <h2 class="mb-4">Milestone 2: add external data and run NLP</h2>
+        <!-- Coding Notebooks  -->
+        <h3 class="mb-4">Coding Notebooks</h3>
+        <p><a href="../code/nlp/external_data.html" style="font-size:20px">External Data</a></p>
+        <p><a href="../code/nlp/nlp_processing_and_sentiment_model.html" style="font-size:20px">NLP Processing and Sentiment Model</a></p>
+        <p><a href="../code/nlp/sentiment_result_analysis.html" style="font-size:20px">Sentiment Result Analysis</a></p>
+        
+        <div style="margin:10px 15px 0px 0px;"><a name="Executive summary"> </a></div>
+        <!-- Executive Summary  -->
+        <h3 class="mb-4">Executive Summary</h3>
+        <table width=100%>
+          <tr>
+            <p>In this milestone, we focused on people's attitudes and changes in Pokémon-related subreddits and the latest Pokémon anime within the last year. The plot below shows people's overall sentiment toward Pokemon products from January 2021 to August 2022. Positive sentiment is about 61.5% of all sentiments, and negative sentiment is about 32.9%. The significantly higher number of positive sentiments than the negative sentiments indicates that Pokemon fans are overall satisfied with Pokemon products. Everyone is willing to share their positive or negative views on Reddit. More than 30% of the negative comments are also worth further study. However, the overall satisfaction doesn't mean every subreddit holds the similar attitudes of Pokemon products. In further analysis, we realized subreddits like "PokemonTCG" and "pokemongo" receive higher proportion of negative sentiments than the average level. Also, on certain days, such as February 26, 2021, Pokemon receives a huge number of negative sentiments. For the conclusion, people are generally satisfied with Pokemon but they hold negative opinions of certain Pokemon products and events.</p>
+          </tr>
+          <tr>
+            <td>
+              <div style="text-align: center"><img src="../data/plots/overall_sentiment.png" width="700px"></div>
+              <div style="text-align: center; color: black" ><strong>Figure 1. &nbsp Number of sentiments in top 5 Pokémon subreddits </strong></div>
+            </td>
+            <td>
+              <div style="text-align: center; color: black" ><strong>Table 1. &nbsp Number of sentiments of the newest Pokemon anime</strong></div>
+              <div style="text-align: center"><img src="../data/plots/tabel0.png" width="220px"></div>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <p>At the same time, for the latest Pokémon animation, Pokémon Journeys: The Series, the discussion is also very intense. The total number of discussions in a year is about 55 thousand, with positive comments accounting for 61.6% of the total. Overall, people are satisfied with anime in this period. However, we realized that people's attitude changes significantly over time in the further analysis. The begining of the anime received high number of positive reviews. Then, the number of positive reviews began to decrease, but it's still similar to avergae level. At the end of the anime, the number of positive comments became lower than the average indicating peopel's dissatisfaction. Thus, we conclude that the anime recieves different sentiments at different periods because of its quality. In the parts below is the key component of specific discussions can help Pokémon company optimize the user experience continuously.</p>
+          </tr>
+        </table>
+        <br>
+        
+        
+        
+        <br><div style="margin:10px 15px 0px 0px;"><a name="Analysis report"> </a></div>
+        <h3 class="mb-4">Analysis Report</h3>
+
+        <!-- Natural Language processing Work  -->
+        <ul><h4 class="mb-4"><li>Natural Language processing Work</li></h4></ul>
+        <table width=100%>
+          <tbody><tr>
+              <td>
+                <img src="../data/plots/comments_length.png" width="700px">
+                <div style="text-align: center; color: black" ><strong>Figure 2. &nbsp Comments length distribution</strong></div>
+                <p>Before proceeding to the NLP cleaning steps, let us examine the distribution of comments length. As comment length becomes longer, the counts gradually drop. That suggests that the majority of comments are relatively short and people seldom write long comments in online social communities. The fact augments the difficulty for further tasks such as text classification. Since there might not exist enough context information for the model to decide which class the comments belong to.</p>
+              </td>
+              <td>
+                <div style="text-align: center; color: black" ><strong>Table 2. &nbsp Top 20 most common words</strong></div>
+                <div style="text-align: center"><img src="../data/plots/most_common_words.png" width="170px"></div>
+              </td>
+          </tr>
+      </tbody></table>
+        <h6 class="mb-4"><strong> NLP Cleaning</strong></h6>
+        <ul>
+          <li>Remove URL links</li>
+          <li>Remove ('s), ('ll), ('ve), ('m), ('re)</li>
+          <li>Remove punctuation and special characters</li>
+          <li>Remove extra white space</li>
+          <li>Tokenization</li>
+          <li>Normalize word frequencies</li>
+          <li>Remove stopwords</li>
+          <li>Lemmatization</li>
+        </ul>
+
+        <!-- Q7  -->
+        <br><ul><h4 class="mb-4"><li>Sentiment Result Analysis</li></h4></ul>
+        <div class="card">
+          <div class="card-header">
+            <strong>Related Questions</strong>
+          </div>
+          <div class="card-body">
+            <h5 class="mb-4">7. What is the overall attitude for Pokémon in related subreddit? </h5>
+            <p class="card-text">The business goal includes performing sentiment analysis on Pokemon subreddits posts and determining the overall attributes in each subreddits. All the subsequent analyses conducted regarding NLP and sentiment analysis of the Pokemon subreddits posts fulfilled our goal. Insights and findings are presented in the following paragraphs. </p>
+          </div>
+        </div>
+        <br>
+        <!-- T1 & T2  -->
+        <table width=100%>
+          <tbody><tr>
+            <td>
+              <div style="text-align: center; color: black" ><strong>Tabel 3. &nbsp Number of sentiments by subreddit</strong></div>
+              <div style="text-align: center"><img src="../data/plots/tabel1.png" width="370px"></div>
+              <br>
+              <p>After TF-IDF and NLP cleaning towards comments, we produced two tables using dummy variables.&nbsp
+                For Tabel 3, the subreddit pokemon receives the most greatest of comments among all top subreddits. The ratio of positive sentiments for pokemon, pokemontrades, and PokemonSwordAndShield are 59.20%, 77.71%, and 70.05%. The number of negative views of the subreddit pokemongo and PokemonTCG is higher than the other subreddits. These two games, as critical projects, have received many negative comments. First, we boldly speculate that the source of negative comments may be the game's mechanism, difficulty, or quality.
+                &nbspFor Tabel 4, From November 2021 to January 2022, the number of sentiments is significantly greater than in other months. We speculate that it is because of the player interaction events of Pokemon Go. Pokémon GO Community Day is a monthly in-game event that features specific Pokémon through limited-time increased spawn rates and obtainable exclusive moves. On January 4, 2022, Niantic announced Community Day Classic, which is the return of previous Community Days. Another possible reason is the release of two new Pokémon games: Pokémon Brilliant Diamond & Shining Pearl on November 19, 2021, and Pokémon Legends: Arceus on January 28, 2022. After this period, the number gradually decreases to normal level.
+              </p>
+            </td>
+              <td width="350px">
+                <div style="text-align: center; color: black" ><strong>Table 4. &nbsp Number of sentiments over months</strong></div>
+                <div style="text-align: center"><img src="../data/plots/tabel2.jpg" width="250px"></div>
+              </td>
+          </tr>
+      </tbody></table>
+      <!-- Num pos and neg over time  -->
+      <iframe src="../data/plots/positive_sentiment.html" frameborder="0" width="100%" height="450"></iframe>
+      <div style="text-align: center; color: black" ><strong>Figure 3. &nbsp Number of positive sentiment in top 5 most popular Pokemon subreddits</strong></div>
+      <p>To gain further insight into the sentiment results over time, we produced two plots for each subreddit, positive and negative.&nbsp
+        February 27th, 2021 is the 26th anniversary of Pokemon. Thus, major releases and announcements regarding the series will be released on or around that specific day. That explains why the number of positive sentiments went up on February 26th. The same reason holds for the increase in February 2022, which suggests that annual product events can burst interest among fans and related social communities. The number of positive sentiments increases around November 2021 for most of the top 5 subreddits. Mainly because of a bunch of new releases and updates. August 2022, Pokemon World Championships for PokemonTCG. Another significant community event brought up interest among followers and the general public.</p>
+      <iframe src="../data/plots/negative_sentiment.html" frameborder="0" width="100%" height="450"></iframe>
+      <div style="text-align: center; color: black" ><strong>Figure 4. &nbsp Number of negative sentiment in top 5 most popular Pokemon subreddits</strong></div>
+      <p>In preparation for celebrating the Pokemon anniversary on February 27th, the Pokemon Company featured a Pokemon Presents presentation on February 26th, 2021. The presentation introduces the latest updates on Pokemon products, such as Pokemon Snap and Pokemon Sword and Shield, as well as the releases of new games, such as the remakes of Pokemon Brilliant Diamond and Pokemon Shining Pearl. As the annual event boosted positive discussions among the Reddit communities, it might also bring up the number of negative talks among the top subreddits. It's worth noting that these Pokemon Presents received more negative sentiments than positive ones on Reddit on February 26th, 2021. This indicated people's dissatisfaction with future Pokemon new products. Thus, an annual event must be designed carefully and wisely to attract worldwide fans.</p>
+      <br>
+      <!-- Wordclouds  -->
+      <table width=100%>
+        <tr>
+          <td style="width:50%; vertical-align:top">
+            <div style="text-align: center"><img src="../data/plots/positive_wordcloud.png" width="470px"></div>
+            <div style="text-align: center; color: black" ><strong>Figure 5. &nbsp Wordcloud of positive sentiments</strong></div>
+          </td>
+          <td>
+            <div style="text-align: center"><img src="../data/plots/negative_wordcloud.png" width="470px"></div>
+            <div style="text-align: center; color: black" ><strong>Figure 6. &nbsp Wordcloud of negative sentiments</strong></div>
+          </td>
+        </tr>
+      </table> 
+      <table width=100%> 
+        <tr>
+          <td>
+            <p>Furthermore, to have the overall view of each sentiment, we produced two word clouds using the comments in the top 5 Pokemon subreddits.&nbsp
+              Apart from the center word 'Pokemon' and 'game,' the positive sentiments mainly include positive words such as 'like,' 'best,' and 'love,' which makes sense intuitively. An interesting phenomenon is that action words like 'would,' 'get,' 'make,' and 'think' appears much more frequently than expected. Comments like 'design,' 'ability,' and 'evolution' also reflect the players' recognition of these aspects of the game. 
+              &nbspFor Figure, Given the chosen topic, words like 'Pokemon' and 'game' show higher frequencies than others. Word 'like' seems somewhat weird here among comments with negative sentiments. The major drawback of sentiment analysis is that it suffers greatly from the specific context and language. Since the word 'like' can have multiple meanings in different context settings, the result is acceptable. Overall, the content of negative sentiments is consistent with common sense. Words such as 'still,' 'think,' 'would,' 'also,' 'literally,' and 'probably' reflect that players contain many suggestions or reviews in their negative comments. The content after these words may be more valuable. 
+            </p>
+          </td>
+        </tr>
+      </table> 
+    <!-- T3 & T4  -->
+      <br>
+    <div style="text-align: center; color: black" ><strong>Table 5. &nbsp Number of sentiments received by Pokemon</strong></div>
+    <div style="text-align: center"><img src="../data/plots/tabel3.png" width="600px"></div><br>
+    <p>In addition to the above from the subreddit perspective, we also conducted sentiment analysis from the Pokemon and the game aspects to get these two tables.&nbsp
+      For Tabel 5, the number of positive comments is far more than neutral and negative combined for all popular pokemon. Charizard, Pikachu, and Eevee received significantly more positive comments than others. The ratio of positive comments for Eevee is 74.16%, which suggests that Eevee can be seen as the most popular. New updates or products based on Eevee might receive positive feedback from the fan community. 
+      &nbspFor Tabel 6, the proportion of positive comments for four games, respectively, is 68.52%, 70.02%, 61.11%, and 71.13%. Although Pokemon Sword And Shield received significantly more positive comments, it also attracted more criticism. Thus, broader attention to a game might bring more negative reviews and comments. Pokémon Legends: Arceus receives the lowest proportion of positive sentiments. This game is different from traditional ones, with many innovations in the gameplay. The result shows people still prefer traditional experiences. The Company should keep the conventional core experience and carefully add new features in future games.
+    </p>
+    <div style="text-align: center; color: black" ><strong>Table 6. &nbsp Number of sentiments received by Pokemon games</strong></div>
+    <div style="text-align: center"><img src="../data/plots/tabel4.png" width="690px"></div>
+    
+    <!-- Q8  -->
+    <br><br>
+    <div class="card">
+      <div class="card-header">
+        <strong>Related Questions</strong>
+      </div>
+      <div class="card-body">
+        <h5 class="mb-4">8. The newest Pokémon anime, Pokémon Journeys: The Series, received a lot of bad reviews over the past year. How does people’s attitude for this anime changes in Pokémon subreddits?</h5>
+        <p class="card-text"> In question 8, the business goal requires determining the trend of changes of sentiments in all subreddits for the newest Pokemon anime, Pokemon Journeys: The Series. Readers can refer to the time series plot about the number of sentiments of Pokemon Journeys: The Series. Here, we discard the second part of the business goal, determining the top 3 subreddits with the highest proportion of negative sentiment. Because the overall result displays that people's general attitude toward this anime is positive. Also, time series analysis reveals that Pokemon Journeys: The Series received many compliments at the starting period, and the middle phase still satisfies most fans. It only received a large number of bad reviews in the recent year. As a result, it is not a must further analyze the anime's negative sentiments at present. The reputation of the series might vary as time goes on. Therefore, we changed our business goal only to include the first part.</p>
+      </div>
+    </div>
+    <iframe src="../data/plots/anime_sentiment.html" frameborder="0" width="100%" height="450"></iframe>
+    <div style="text-align: center; color: black" ><strong>Figure 7. &nbsp Number of sentiments of Pokémon Journeys: The Series</strong></div>
+    <p>The time series above shows the number of sentiments toward the newest Pokemon anime, Pokemon Journeys: The Series. The most prominent part of this plot is the spike in positive views around March 5, which is related to the release of the anime's fourth season. The fourth season received such a high number of positive reviews because the Legendary Pokemon in Sword and Shield first appeared in the anime series, attracting a large amount of attention. After this season, from March 15, 2021, to May 6, 2022, the number of positive sentiments is higher than that of negative sentiments. The proportion of positive sentiment is similar to the average level. Overall, people are satisfied with anime in this period. However, the situation changed on May 6, 2022, when the Master's Eight Tournament began. The Master's Eight Tournament is the climax of the anime. Still, due to the terrible storyline and poor Pokemon battle, it receives many negative reviews. The number of negative sentiments becomes close to the number of positive sentiments, indicating about half of the fans are disappointed with the anime. We can conclude that Pokemon Journeys: The Series has remarkable performance at the beginning phase. The middle phase is average, but it's still acceptable for most fans. The ending phase receives a lot of negative reviews and even can be considered a failure.</p>
+
+    <!-- External Data  -->
+    <br><div style="margin:10px 15px 0px 0px;"><a name="External Data"> </a></div>
+    <h3 class="mb-4">External Data</h3>
+    <div class="card">
+      <div class="card-header">
+        <strong>Related Questions</strong>
+      </div>
+      <div class="card-body">
+        <h5 class="mb-4">9. Can we use number of posts in Pokémon subreddits to predict the stock price of Nintendo?</h5>
+        <p class="card-text">We merged the Nintendo stock price data with the Reddit comments data. Then we conducted a time series analysis and produced time series plots of the stock and aggregated data. The business goal for question 9 is already half-completed. The next step is to build models to predict Nintendo stock prices using the number of Reddit posts. </p>
+        <p class="card-text">Source of External Data: <a href="https://finance.yahoo.com/quote/NTDOY?p=NTDOY&.tsrc=fin-srch">https://finance.yahoo.com/quote/NTDOY?p=NTDOY&.tsrc=fin-srch</a></p>
+      </div>
+    </div>
+    <iframe src="../data/plots/NTDOY.html" frameborder="0" width="100%" height="550" scrolling="no"></iframe>
+    <div style="text-align: center; color: black" ><strong>Figure 8. &nbsp Nintendo Stock Prices from January 2021 to August 2022</strong></div>
+    <p>The graph shows the stock price of Nintendo from Jan 2021 to Aug 2022. The price displayed a decreasing trend in the recent year with periodic oscillations and dropped from 15.74 to 10.22. On Feb 17, 2021, Nintendo hosted the most extended Nintendo Direct presentation in recent years to share news on available and upcoming games. This droves the stock price up to a relatively high point. The same logic holds for the surge in June 2021. The steep decreasing trend from Jul to Dec 2021 is mainly due to decreasing demand in both hardware and software markets, which also caused a decrease in net sales. Also, principal investors pulling back could be another reason for the decline. The stock gradually recovered from Dec 2021 to Mar 2022, with a series of releasing events happening during the last quarter of fiscal 2022. That also included several updates on the Pokémon series, such as Pokémon Legends: Arceus.</p>
+    <iframe src="../data/plots/subreddits_stock.html" frameborder="0" width="100%" height="450" scrolling="no"></iframe>
+    <div style="text-align: center; color: black" ><strong>Figure 9. &nbsp Number of comments in Pokémon subreddits and Nintendo stock price</strong></div>
+    <p>There seems to exist a certain relationship between the number of comments in Pokemon subreddits and Nintendo stock price. When the number of comments in the top subreddits surged, such as on February 26th, 2021, June 22nd, 2021, and Feb 28th, 2022, the stock price was also increasing or at a relatively high level. Suggesting that an increase in the number of comments might indicate a future increase in the stock price, although the relationship may be too weak to be detected. Thus, the next step would be using appropriate ML models to try to predict the stock price with the number of comments in top Pokemon subreddits. Usually, the day when Reddit has a high amount of discussion is when Pokémon releases a new game or version update. Therefore, the sentiment analysis of comments can also be one of the reasons that affect the stock price. We can introduce sentiment analysis to explore the impact of public praise on the company's stock price.</p>
+
+
+      </div>
+		</div>
+
+    <script src="../website-source/js/jquery.min.js"></script>
+    <script src="../website-source/js/popper.js"></script>
+    <script src="../website-source/js/bootstrap.min.js"></script>
+    <script src="../website-source/js/main.js"></script>
+
+  </body>
+</html>

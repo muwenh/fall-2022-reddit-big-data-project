@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>502 Project - Group 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<p style="font-size:20px">502 Final Project Home Page</p>
+          <p>Group Member: Shide Pu, Muwen Huang, Hongyu Zhao, Chenyue Jin</p>
+          <div style="position: fixed;">
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./eda.html">Exploratory Data Analysis</a></li>
+            <li><a href="./nlp.html">NLP and external data overlay &nbsp &nbsp</a></li>
+            <li><a href="./ml.html">Machine Learning</a></li>
+	          <li><a href="./conclusion.html">Conclusion</a></li>
+	        </ul></div>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">EDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./nlp.html">NLP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ml.html">ML</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./conclusion.html">Conclusion</a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <h2 class="mb-4" > Pokémon IP Research on Reddit Archive data</h2>
+        <div style="text-align: center">
+          <img align="center" src="./eda_picture/Pokemon-big-poster-01.jpg" width="700px"><br><br>
+          <div style="text-align: center; color: black" ><strong>All Pokémon (source: <a href="https://www.wallpapertip.com/wpic/iiiTRx_wallpapers-pokemon-hd-taringa-all-pokemon/">wallpapertip</a>)</strong></div>
+        </div>
+
+        <p>Pokémon is a series of video games developed by Game Freak and published by Nintendo and The Pokémon Company under the Pokémon media franchise. With popular anime series, films, and products, Pokémon is considered to be the largest media franchise. Pokémon Go, a spin-off game, has received more than 1 billion mobile game downloads globally. </p>
+        <div style="text-align: center"><img src="../data/plots/top20_pokemon_subreddits.png" width="900px"></div><br>
+        <div style="text-align: center; color: black" ><strong>Figure 1. &nbsp Top 20 Pokémon subreddits</strong></div>
+        <p>As the world's largest IP, Pokémon also has a large number of fans and players in the United States. On Reddit, everyone enjoys talking about games and animation-related topics. From January 2021 to August 2022, there are 20 subreddits related to Pokémon with at least 18000 submissions. The r/Pokémon subreddit has more than 4 million submissions. As the largest unofficial Pokémon fan community, players' views should be taken into consideration by game production companies and publishing companies. </p>
+        <p>Therefore, we decide to analyze user submissions data on Reddit in order to extract any potential commercial intelligence that may be hidden behind users' perspectives. Assist the organization in better comprehending player comments on the game and ensuring that gamers continue to receive an improved gaming experience. In addition, we will try to solve relevant business questions through natural language processing and machine learning models, such as predicting Nintendo's stock through the number of posts on Reddit and classifying submissions to their subreddit based on submission contents. This will help us better understand the relationship between players, games, and social platforms, as well as put forward the direction for the social development of games in the future.</p>
+        <iframe src="../data/plots/game_timeseires.html" frameborder="0" width="100%" height="450"></iframe>
+        <div style="text-align: center; color: black" ><strong>Figure 2. &nbsp Number of submissions for Pokémon games</strong></div>
+        <p>In this project, we found that Pokémon go, Pokémon TCG, and Pokémon Sword and Shield are the game that has aroused the most discussion. A deeper examination of its logic from a commercial perspective is essential, and there are lessons to be drawn from the unparalleled success. Players expect and love to participate in and discuss the annual birthday events and new version updates. Nintendo's marketing approach is successful. Both the overall user base and user stickiness have increased. The most active author's submissions generally lack commercial value and are unsuitable for businesses to spend additional time and money on.  Most of the content submitted by the most active authors lacks commercial value, and only a few active authors can publish high-quality content for a long time. Enterprises need to cooperate selectively according to their own marketing plans and costs. Everyone on Reddit has a favorable opinion of Pokémon in general, and gamers are eager to share their advice and appreciation on the social platform.</p>
+        <div style="text-align: center"><img src="../data/plots/overall_sentiment.png" width="700px"></div>
+        <div style="text-align: center; color: black" ><strong>Figure 3. &nbsp Number of sentiments in top 5 Pokémon subreddits </strong></div>
+        <p>The ratio of positive sentiments for r/Pokémon, r/pokemontrades, and r/PokemonSwordAndShield is over 60%. The three newer games, Pokémon Brilliant Diamond and Shining Pearl (BDSP), Pokémon Legends: Arceus, and Pokémon Scarlet and Violet have also received attention and discussion from players. As the ace Pokémon of the protagonist in the first anime series, Charizard’s cool appearance and strong performance in anime gave people very impressive memory. The popularity of Charizard lasts for decades and in the current day, it's still the most popular Pokémon on social media. The beautiful and well-designed Pokémon will get more love and attention from players, such as the different evolutions of Eevee.</p>
+        <table width=100%>
+          <tbody><tr>
+              <td>
+                <div style="text-align: center"><img src="./eda_picture/charizard.png" width="350px"></div>
+                <div style="text-align: center; color: black" ><strong>Charizard Pokémon (source: <a href="https://sonic-pokemon-unipedia.fandom.com/wiki/Charizard">Sonic Pokémon Uni-Pedia Wiki</a>)</strong></div>
+            </td>
+              <td>
+                <div style="text-align: center"><img src="./eda_picture/Sylveon_VMAX.png" width="300px"></div>
+                <div style="text-align: center; color: black" ><strong>Sylveon trading card (source: <a href="https://www.tcgplayer.com/product/246704/pokemon-swsh07-evolving-skies-sylveon-vmax-alternate-art-secret?xid=pi952d295e-3a63-403b-8b4b-3cd7ca833b0f&Language=English">TCGplayer</a>)</strong></div>
+            </td>
+          </tr>
+      </tbody></table>
+
+
+        <br><br><h4 class="mb-4" > Research Directions</h4>
+        <h5 class="mb-4">1. What is the most popular subreddit related to Pokémon from January 2021?</h5>
+          <p>Business goal: Determine popular subreddits related to Pokémon. Help company to understand what the most popular field about Pokémon is in social media.</p>
+          <p>Technical proposal: Choose keywords to filter Pokémon related subreddits. Use regex to filter all subreddits related to Pokémon using keywords on submissions data. Remove subreddits which contain too much useless information. Count number of submissions in each subreddit and rank them in descending order. Present top 20 subreddits with a graph to show subreddits with top popularity. Repeat the same filtering process on comments data. Save both filtered data into parquets and use them for future analysis.</p>
+        <h5 class="mb-4">2. What Pokémon events are successful marketing campaigns that can attract discussion and attention from players and interested parties?</h5>
+          <p>Business goal: Determine the trend of change in numbers of submissions in top 3 Pokémon subreddits.</p>
+          <p>Technical proposal: Select submissions and comments in the top 3 subreddits. Transfer UNIX timestamps to human readable time format specifically yyyy-mm-dd. Conduct counts of number of posts over time in different subreddits for submission data and comment data separately. Aggregate two count results by time to create time series data. Save the created time series data to csv for future time series analysis. Present result with time series graphs.</p>
+        <h5 class="mb-4">3. Does the most active author in reddit have commercial value?</h5>
+          <p>Business goal: Determine influential users in top 3 popular Pokémon subreddits.</p>
+          <p>Technical proposal: Select top 3 popular subreddit from the data saved in Question 1. Perform summation of number of comments by authors in Submission data. Sort the aggregation table in descending order and present the top 10 influential authors with a graph. Conduct summation of number of comments by subreddit for top 5 popular authors. Filter top 10 submissions which receive largest number of comments for each author.</p>
+        <h5 class="mb-4">4. How are the popularities of the recent 4 Pokémon games change from January 2021 to August 2022?        </h5>
+          <p>Business goal: Determine popularities of recent 4 Pokémon games including Pokémon: Sword & Shield (2019-11-15), Pokémon Brilliant Diamond & Shining Pearl (2021-11-19), Pokémon Legends: Arceus (2022-1-28) and Pokémon Scarlet & Violet (2022-11-18).</p>
+          <p>Technical proposal: Perform research about these 4 games and decide keywords for these games. Use regex to filter submissions comments related to these games by keywords. Create three dummy variables for each game to indicate if a submission or comment mentions each game. Sum 4 dummy variables over day to create time series data. Plot time series graphs for 4 dummy variables to show the trend of popularities.          </p>
+        <h5 class="mb-4">5. What is the most popular Pokémon discussed in subreddits?</h5>
+          <p>Business goal: Determine the Pokémon that receives the greatest number of discussions.  </p>
+          <p>Technical proposal: At the end of August 2022, there are 905 different Pokémons in Pokémon database. We regard Pokémons at the same evolution chain and different evolutions with the same origin as one Pokémon. Create a list of 15 Pokémon names which are potential candidates of the most popular Pokémon. Create dummy variables for each selected Pokémon using regex. Also, create dummy variables for all categories of Legendary Pokémon. Perform summation over dummy variables and sort result in descending order. Present result in a summary table.</p>
+        <h5 class="mb-4">6. Eevee is one of the most special Pokémon which has the greatest number of different evolutions. What is the most popular Eevee evolution in different subreddits?</h5>
+          <p>Business goal: Determine the Eevee evolution that receives the greatest number of discussions in different Pokémon subreddits.</p>
+          <p>Technical proposal: Use Eevee dummy variable created in Question 5 to filter all submissions and comments mentioned Eevee. Create dummy variables for each Eevee evolution (8 different evolutions). Conduct counts of number of occurrences of each dummy variable in different subreddits. Present the result with a summary table.</p>
+        <h5 class="mb-4">7. What is the overall attitude for Pokémon in related subreddit?</h5>
+          <p>Business goal: Perform sentiment analysis on Pokémon subreddits posts. Determine the overall attributes in each subreddits.</p>
+          <p>Technical proposal: Use NLP to clean submission and comment texts. Split texts into sentences and convert all words into lowercase. Remove html links, punctuations, stop words, and special characters (emoji) from sentences. Use a pretrained sentiment analysis model and build Spark NLP pipeline. Use the pipeline to perform sentiment analysis on submission and comment bodies. Count number of sentiments in subreddits and present the result as a table.</p>
+        <h5 class="mb-4">8. The newest Pokémon anime, Pokémon Journeys: The Series, received a lot of bad reviews over the past year. How does people’s attitude for this anime changes in Pokémon subreddits?</h5>
+          <p>Business goal: Determine the trend of changes of sentiments in all Pokémon subreddits. Determine the top 3 subreddits with the highest proportion of negative sentiment.          </p>
+          <p>Technical proposal: Create a list of keywords to search Pokémon Journeys: The Series. Filter submissions and comments which mention the anime using regex. Count number of sentiments over time and present the result with a time series plot. Count number of sentiments in different subreddits and compute proportions of sentiments in each subreddit. Select top 3 subreddits with the highest proportion of negative sentiment and present result in a table.</p>
+        <h5 class="mb-4">9.Can we use number of posts in Pokémon subreddits to predict the stock price of Nintendo?        </h5>
+          <p>Business goal: Perform time series analysis and build a time series model to predict Nintendo stock price using number of posts in Pokémon subreddits.</p>
+          <p>Technical proposal: Gather Nintendo stock data from January 2021 to August 2022 from Yahoo Finance. Full outer Join the stock data with the time series data created in Question 2. Fill missing values in joint data with linear interpolation. Train a VAR (vector autoregression) model to predict stock price. Present result by a graph showing actual vs. predicted data.</p>
+        <h5 class="mb-4">10. Can we classify submissions to their subreddit based on submission contents?</h5>
+          <p>Business goal: Build classification models to predict the subreddits of the submissions based on the submission contents.</p>
+          <p>Technical proposal: Use submissions from selected subreddits related to Pokémon. Perform tokenization, remove stop words, remove any external links, punctuations, and special characters, and transform the submission contents into a document term matrix. Use StringIndexer to encode the label column to label indices. Split the data into training and test sets. Build Spark ML pipeline. Use models such as Naive Bayes and random forest to perform text classification. Evaluate model performances with accuracies, confusion matrices, and ROC curves.</p>
+          <h5 class="mb-4">11. Is certain Pokémon influencing people's sentiments in Pokémon subreddits?</h5>
+          <p>Business goal: Use machine learning models to predict people's sentiments based on present of certain Pokémon.</p>
+          <p>Technical proposal: Create dummy variables to indicate the present of popular Pokémon. Split sentiment dataset created by sentiment model into training data and test data. Build machine learning pipelines for logistic regression and random forest models. Evaluate models based on multiple metrics, including precision, recall, f-1 score, accuracy and ROC AUC. Plot heatmap for confusion matrix and create summary table for each model to present result.</p>
+        </div>
+		</div>
+
+    <script src="../website-source/js/jquery.min.js"></script>
+    <script src="../website-source/js/popper.js"></script>
+    <script src="../website-source/js/bootstrap.min.js"></script>
+    <script src="../website-source/js/main.js"></script>
+  </body>
+</html>

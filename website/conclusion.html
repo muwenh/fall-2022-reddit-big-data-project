@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  	<title>502 Project Final Deliverable - Group 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/style.css"> 
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" >
+				<div class="p-4 pt-5" >
+		  		<p style="font-size:20px">502 Final Project Milestone 4</p>
+          <p>Group Member: Shide Pu, Muwen Huang, Hongyu Zhao, Chenyue Jin</p>
+          <div style="position: fixed;">
+	        <ul class="list-unstyled components mb-5">
+	          <li><a href="./index.html">Home</a></li>
+            <li><a href="./eda.html">Exploratory Data Analysis</a></li>
+            <li><a href="./nlp.html">NLP and external data overlay </a></li>
+            <li><a href="./ml.html">Machine Learning</a></li>
+            <li class="active"><a href="./conclusion.html">Conclusion</a></li>
+	          <li></li>
+	        </ul></div>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+        <div style="margin:10px 15px 0px 0px;"><a name="Coding Notebooks"> </a></div>
+      <div id="content" class="p-4 p-md-5" >
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./eda.html">EDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./nlp.html">NLP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ml.html">ML</a>
+              </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./conclusion.html">Conclusion</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+
+        <h2 class="mb-4">Conclusion Page</h2>
+        <!--   -->
+        <div style="margin:10px 15px 0px 0px;"><a name="a"> </a></div>
+        <div style="text-align: center"><img src="./eda_picture/Pokemon_logo.png" width="610px"></div>
+        <div style="text-align: center; color: black" ><strong>Pokémon Logo (source: <a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon">wikipedia</a>)</strong></div>
+        <br>
+
+        <h4 class="mb-4">Achievements</h4>
+        <p>In this project, our group explored many hot topics about Pokémon IP with EDA, NLP, machine learning, and other approaches. For example, daily activity analysis of Pokémon-related subreddit, comparison of the most popular games, post sentiment analysis, text classification, research in special Pokémon-evolution popularity, subreddit influencer, etc.
+          After a comprehensive and complete analysis, we achieved 90% of our initial goal and did some extended work, such as sentiment classification for specific keywords and Nintendo stock prediction. There were many interesting findings, and we also extracted much potential business intelligence behind users' opinions.</p>
+        <p>From January 2021 to August 2022, the most popular subreddit related to Pokemon is pokemongo, followed by pokemon and pokemontrades. Unique product feature of the well-known AR mobile game is the key to success. Special events like updates or releases on Pokemon games and the celebration of the birthday of Pokemon are considered successful marketing campaigns that can attract attention and stimulate discussions in online social communities.</p>
+        <iframe src="../data/plots/top3_timeseires.html" frameborder="0" width="100%" height="450"></iframe>
+        <div style="text-align: center; color: black" ><strong>Figure 1. &nbsp Number of comments in top 3 popular Pokémon subreddits</strong></div>
+        <br>
+        <p>From a detailed examination of top influential authors and their submissions among the top 3 popular Pokemon subreddits, we found out that only a few of them are worth for the Pokemon company to reach out and possess commercial value. The company can utilize these useful resources to direct discussions and promote interest within the Pokemon-related Reddit online communities. The top 3 popular Pokemon among normal Pokemon are Charizard, Pikachu, and Eevee. Charizard amazed the fans with its appearance and incredible performance in the anime series. Pikachu and Eevee are both chosen to make popular by the company. The long-term investment paid off. Among legendary Pokemons, the Weather Trio receives the greatest attention. Suggesting that fans and players would remember significant events in the Pokemon world even if they happened a long time ago. Also, note that appearance plays an important part in people’s preference towards certain Pokemon. That can be considered when the Pokemon company intends to promote another iconic face to the Pokemon world. That also explains why the top 3 most discussed Eevee evolutions are the Umbreon, Sylveon, and Espeon.</p>
+        <div style="text-align: center;"><img src="../data/plots/top15_pokemon.png" width="950px"></div>
+        <div style="text-align: center; color: black" ><strong>Figure 2. &nbsp Top 15 Popular Pokémon</strong></div>
+        <br>
+        <p>The majority of people’s attitudes toward Pokemon and its related subjects on Reddit are positive. However, the percentage of positive sentiments overall is just over 60% and some of the subreddits have significantly higher proportions of negative sentiments. Indicating that the discussion on Reddit is somewhat calmer than we would imagine. Generally, fans are expressing their unique and objective opinions in subreddits related to Pokemon. Those comments shared by Reddit fans are of great value to the Pokemon company and should be analyzed carefully and accordingly when promoting updates on current games or releases of new games. Positive and negative attitudes also vary along with special events. Thus, the Pokemon company should be cautious when designing and launching annual events and certain critical activities.</p>
+        <iframe src="../data/plots/positive_sentiment.html" frameborder="0" width="100%" height="450"></iframe>
+        <div style="text-align: center; color: black" ><strong>Figure 3. &nbsp Number of positive sentiment in top 5 most popular Pokemon subreddits</strong></div>
+        <br>
+        <p>To further investigate how certain Pokemon influence people’s attitudes, we applied machine learning models on subreddit names, scores, and whether the comment mentioned certain Pokemon or not to predict the sentiment of the comment. The model accuracies are not high enough. Unfortunately, we cannot say that we are confident enough to predict people’s attitudes just with the above information at the current state due to multiple potential reasons. We will focus on improving and optimizing the prediction process in the next steps. To help users quickly identify their interested content and improve user experience, we also conduct machine learning research on classifying submission titles according to the corresponding subreddits. We received more satisfying and promising results on this task. It is possible to predict the subreddits with the submission contents currently, although more optimization steps and fine-tuning will be needed in the near future to improve the prediction models. We also examined the trends of Nintendo stock price combined with the trends and sentiments of Reddit fan comments. There might exist positive correlations between them and further research needs to be done.</p>
+        <iframe src="../data/plots/subreddits_stock.html" frameborder="0" width="100%" height="450" scrolling="no"></iframe>
+        <div style="text-align: center; color: black" ><strong>Figure 4. &nbsp Number of comments in Pokémon subreddits and Nintendo stock price</strong></div>
+        
+        <br><br>
+        <h4 class="mb-4">Future Steps</h4>
+        <table width=100%>
+          <tbody>
+            <td>
+              <p>There are several tasks waiting to be done for the next steps. First, both the data preprocessing steps and models for the sentiment classification part need to be improved. We should filter out only the comments that mentioned the chosen Pokemons compared to all the comments. The content detail and accuracy of the sentiment labels need to be examined with caution. Since the above key information may not be accurate in the first stage and that can cause huge bias in the further prediction steps. We can also construct more fine-tuned and more complex models such as deep learning models for prediction. Second, the prediction process for the text classification part also needs to be improved and optimized. We need to distinguish contents in the subreddit Pokemon Sword and Shield. And we can add more subreddits to the filtered dataset. Also, fine-tuning can be applied to the current models. More complicated models can be considered, such as LSTM, CNN, Bert, HAN, and GPT-3. Third, we can try to model the relationship between trends and sentiments of the Reddit comments and the Nintendo stock prices with machine learning models for time series forecasting. Last, we need a deep dive into the Reddit submissions and comments content to identify some famous quotes from the Pokemon anime series. Also, we can research how those quotes influence people’s overall attitudes.</p>
+            </td>
+            <td>
+              <div style="text-align: center"><img src="./eda_picture/pikaqiu.jpeg" width="350px"></div>
+              <div style="text-align: center; color: black" ><strong>Ash (Main character in TV series) and Pikachu </strong></div>
+            </td>
+          </tbody>
+        </table>
+        
+        <br><br><br><br><br><br><br>
+        <hr class="hr-twill">
+        <br>
+        <table width=100%>
+          <ul>
+            <h5 class="mb-4"><li><strong>Classic lines from Pokémon (TV series)</strong> </li></h5>
+          </ul>
+          <tbody>
+            <tr>
+            <td width="550px">
+              <div style="text-align: center"><img src="./eda_picture/Team_Rocket_motto.png" width="500px"></div>
+              <div style="text-align: center; color: black" ><strong>The villain Team Rocket (Kojirō and Musashi) and their classic mottos (source: <a href="https://bulbapedia.bulbagarden.net/wiki/Team_Rocket_mottos">bulbapedia</a>)</strong></div>
+            <td >
+              <p>Musashi: If you ask us this or that...</p>
+              <p>Kojirō: The pity of the world is what responds!</p>
+              <p>Musashi: To prevent the destruction of the world!</p>
+              <p>Kojirō: To protect the peace of the world!</p>
+              <p>Musashi: To stand by the evils of love and truth!</p>
+              <p>Kojirō: The lovely, charmy villains!</p>
+              <p>Musashi: The pair from Team Rocket soars through the galaxy!</p>
+            </td>
+          </tr>
+      </tbody></table>
+
+
+
+    
+      </div>
+		</div>
+
+    <script src="../website-source/js/jquery.min.js"></script>
+    <script src="../website-source/js/popper.js"></script>
+    <script src="../website-source/js/bootstrap.min.js"></script>
+    <script src="../website-source/js/main.js"></script>
+
+  </body>
+</html>

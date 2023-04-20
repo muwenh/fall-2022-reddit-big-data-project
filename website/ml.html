@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  	<title>502 Project Milestone 3 - Group 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/style.css"> 
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" >
+				<div class="p-4 pt-5" >
+		  		<p style="font-size:20px">502 Final Project Milestone 3</p>
+          <p>Group Member: Shide Pu, Muwen Huang, Hongyu Zhao, Chenyue Jin</p>
+          <div style="position: fixed;">
+	        <ul class="list-unstyled components mb-5">
+	          <li><a href="./index.html">Home</a></li>
+            <li><a href="./eda.html">Exploratory Data Analysis</a></li>
+            <li><a href="./nlp.html">NLP and external data overlay </a></li>
+            <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Machine Learning &nbsp &nbsp</a>
+	            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li><a href="./ml.html#Coding Notebooks">Coding Notebooks</a></li>
+                <li><a href="./ml.html#Executive summary">Executive summary</a></li>
+                <li><a href="./ml.html#Analysis report">Analysis report</a></li>
+	            </ul>
+	          </li>
+	          <li><a href="./conclusion.html">Conclusion</a></li>
+	        </ul></div>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+        <div style="margin:10px 15px 0px 0px;"><a name="Coding Notebooks"> </a></div>
+      <div id="content" class="p-4 p-md-5" >
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="fa fa-bars"></i>
+              <span class="sr-only">Toggle Menu</span>
+            </button>
+            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./eda.html">EDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./nlp.html">NLP</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./ml.html">ML</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./conclusion.html">Conclusion</a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+
+        <h2 class="mb-4">Milestone 3: Machine Learning</h2>
+        <!-- Coding Notebooks  -->
+        <h3 class="mb-4">Coding Notebooks</h3>
+        <p><a href="../code/ml/text_classification.html" style="font-size:20px">Text Classification</a></p>
+        <p><a href="../code/ml/sentiment_classification.html" style="font-size:20px">Sentiment Classification</a></p>
+        <p><a href="../code/ml/time_series_analysis.html" style="font-size:20px">Time Series Analysis</a></p>
+        <p><a href="../code/ml/load_model.html" style="font-size:20px">Load Pretrained Model</a></p>
+        
+        <div style="margin:10px 15px 0px 0px;"><a name="Executive summary"> </a></div>
+        <!-- Executive Summary  -->
+        <h3 class="mb-4">Executive Summary</h3>
+        <table width=100%>
+          <tr>
+            <td>
+              <p>In this milestone, we focus on applying machine learning models to achieve two classification tasks: predicting sentiments of comments based on present of Pokémon and classifying submission titles to subreddits. For the first task, the reason of performing this task is to determine if certain Pokémon can influence people’s sentiments, so The Pokémon Company can make advertising strategies based on the result. We train two machine learning models, random forest and logistic regression to use present of certain Pokémon including, Charizard, Pikachu, Eevee, Weather Trio, Legendary Beasts, Creation Trio to predict sentiments of comments in Pokémon subreddits. Both models don't show promising ability to predict sentiments (Table 1). We think there are some factors may lead to this terrible model performance. First, number of present of these Pokémon is relatively small compared to all comments, so we should focus on comments containing these Pokémon instead of all comments. Second, sentiment labels are created by sentiment model which may not be accurate. The gap between sentiment generation process and prediction process may lead to huge error. Third, at current stage, both models are far from fine-tuned, so we believe further tuning models can improve their performance. Fourth, using more complicated models like deep learning might generate better results. However, due to hardware limitation, we cannot perform deep learning on the databricks cluster (no GPU). We think this is a path worth further investigation. For the conclusion, our current model cannot predict sentiments of comments using present of Pokémon.</p>
+              <div style="text-align: center; color: black" ><strong>Table 1. &nbsp Model selection of sentiments classification</strong></div>
+              <div style="text-align: center"><img src="../data/plots/model_selection_sent.png" width="610px"></div><br>
+              <p>The second task is to classify submission titles to subreddits. In the Pokémon subreddits which are widely discussed by the players, users sometimes cannot accurately distinguish the content they need to browse. With this task, we can archive the content published in the Pokémon subreddits to the corresponding subreddit. We can also label the posts in Pokémon subreddits to help users find their target contents and improve their browsing experience. We build three models including logistic regression, naïve bayes and random forest. Compared with the other two models, the performance of random forest is obviously worse than the other two. The results of logistic regression and naïve bayes are very close and both models show promising ability to classify the subreddit by content. However, both models have significantly poor ability to predict Pokémon Sword and Shield. We speculate that Pokémon Sword and Shield has a lot of overlays in contents with Pokémon and Pokémon go, so it’s difficult for models to distinguish this subreddit from others. Although these models are not perfect, we think that they are capable of effectively classifying subreddits by contents.</p>
+              <div style="text-align: center; color: black" ><strong>Tabel 2. &nbsp Model selection of text classification</strong></div>
+              <div style="text-align: center"><img src="../data/plots/model_selection_text.png" width="600px"></div>
+            </td>
+          </tr>
+        </table>
+        <br>
+        
+        
+        <br><div style="margin:10px 15px 0px 0px;"><a name="Analysis report"> </a></div>
+        <h3 class="mb-4">Analysis Report</h3>
+
+        <!-- Q7  -->
+      <ul><h4 class="mb-4"><li>Sentiments Classification</li></h4></ul>
+      <div class="card">
+        <div class="card-header">
+          <strong>Related Questions</strong>
+        </div>
+        <div class="card-body">
+          <h5 class="mb-4">11. Is certain Pokémon influencing people's sentiments in Pokémon subreddits?</h5>
+          <p class="card-text">The original business question focuses on analyzing sentiment results but not on how Pokémon is affecting sentiments. To further investigate how people’s sentiments are influenced by Pokémon, we decide to propose a new business question. In this section, we use machine learning methods including random forest and logistic regression to predict sentiments based on present of certain Pokémon. Both models show very terrible performance in predicting sentiments. Thus, based on current result, we cannot say people’s sentiments are influenced by certain Pokémon. We propose some steps for further research which may can significantly change our current result.</p>
+        </div>
+      </div>
+      <br>
+
+    <ul><li><h6 class="mb-4"><strong>Random Forest</strong></h6></li></ul>
+      <table width=100%>
+        <tbody><tr>
+          <td>
+            <div style="text-align: center; color: black" ><strong>Tabel 3. &nbsp Random Forest model performance</strong></div>
+            <div style="text-align: center;"><img src="../data/plots/sent_rf_performance.png" width="450px"></div>
+            <p>To answer our business question, we decide to build machine learning models to predict comment sentiments using Pokémon dummy variables. The first model we trained is random forest. This model predicts most of comments as positive which lead to the high f-1 score in positive and very low f-1 scores in negative and neutral. The ROC AUC value of 0.5335 also indicates this model has almost no ability to predict comment sentiments. The worst prediction is about the neutral sentiment. However, this may not be a problem of the classification model, because neutral sentiment is a very small part of the overall datasets and it's inherently indistinguishable and unbiased. This model shows very little ability to predict sentiments based on Pokémon. However, by changing hyperparameter sets to create more complicted random forest, model performace increases. Thus, we think further tuning the random forest can improve the model performance.</p>
+            <iframe src="../data/plots/sentiment_classification_rf.html" frameborder="0" width="100%" height="450"></iframe>
+            <div style="text-align: center; color: black" ><strong>Figure 1. &nbsp Confusion matrix of Random Forest model</strong></div>
+          </td>
+        </tr>
+    </tbody></table><br>
+
+    <ul><li><h6 class="mb-4"><strong> Logistic regression (softmax)</strong></h6></li></ul>
+      <table width=100%>
+        <tbody><tr>
+          <td>
+            <div style="text-align: center; color: black" ><strong>Tabel 4. &nbsp Logistic Regression model performance</strong></div>
+            <div style="text-align: center;"><img src="../data/plots/sent_lr_performance.png" width="450px"></div>
+            <p>The second model we build is the logistic regression model or SoftMax regression to compare with random forest. By changing parameters, we transform it to ridge regression and lasso regression. The performance of logistic regression is very similar to the random forest. It also predicts almost all comments as positive. The ROC AUC value of ridge regression is 0.500024 and that of lasso regression is 0.5 which are even worse than the random forest. Both negative and neutral has f-1 score of 0, so this model cannot make correct prediction of these two sentiments. We can conclude that the logistic regression model has no ability to predict comments sentiment based on Pokémon. Because the performance of logistic regression is so bad, we think further tuning may not be useful to improve prediction results. We think the logistic regression model may not be suitable for this classification task.</p>
+            <iframe src="../data/plots/sentiment_classification_lr.html" frameborder="0" width="100%" height="450"></iframe>
+            <div style="text-align: center; color: black" ><strong>Figure 2. &nbsp Confusion matrix of Logistic Regression model</strong></div>
+          </td>
+        </tr>
+    </tbody></table><br>
+
+
+        <!-- Q10  -->
+        <br><ul><h4 class="mb-4"><li>Text Classification</li></h4></ul>
+        <div class="card">
+          <div class="card-header">
+            <strong>Related Questions</strong>
+          </div>
+          <div class="card-body">
+            <h5 class="mb-4">10. Can we classify submissions to their subreddit based on submission contents?</h5>
+            <p class="card-text">In this section, we focus on classification of submission titles to subreddits. We build three models, including logistic regression, naïve bayes and random forest. We follow the proposed technical methods in this section. The result shows that both logistic regression and naïve bayes models have promising ability to classify submission title to subreddits.</p>
+          </div>
+        </div>
+        <br>
+
+      <ul><li><h6 class="mb-4"><strong> Logistic regression (softmax)</strong></h6></li></ul>
+        <table width=100%>
+          <tbody><tr>
+            <td>
+              <div style="text-align: center; color: black" ><strong>Tabel 5. &nbsp Logistic Regression model performance</strong></div>
+              <div style="text-align: center;"><img src="../data/plots/text_lr_performance.png" width="500px"></div>
+              <p>To answer our business question, we decide to build machine learning models to classify submission titles to their subreddits. Submission titles are text data which cannot be directly used as input for models, so we should further process submission titles data. We tokenize submission titles with regular expression, removing stop words and vectorize tokens by term frequency. The first model we build is multinominal logistic regression or SoftMax regression. The text classification creates a large number of features, so it's possible that our model will suffer from multicollinearity. To resolve this problem, we decide to use Ridge regression which has elastic net of 0 to train model. The confusion matrix and evaluation metrics including accuracy, precision, recall and f-1 score are shown above. The PokemonTCG has the highest precision and f-1 score which are 0.91 and 0.81 respectively. To improve the performance of the model, we perform 5-fold cross validation using different combination of parameters. The result model has similar performance compared to the model we first trained. This indicates that the model we trained is good enough and further tuning may not improve model performance significantly.</p>
+              <iframe src="../data/plots/text_classification_lr.html" frameborder="0" width="100%" height="450"></iframe>
+              <div style="text-align: center; color: black" ><strong>Figure 3. &nbsp Confusion matrix of Logistic Regression model</strong></div>
+            </td>
+          </tr>
+      </tbody></table><br>
+
+      <ul><li><h6 class="mb-4"><strong> Naive Bayes</strong></h6></li></ul>
+        <table width=100%>
+          <tbody><tr>
+            <td>
+              <div style="text-align: center; color: black" ><strong>Tabel 6. &nbsp Naive Bayes model performance</strong></div>
+              <div style="text-align: center;"><img src="../data/plots/text_nb_performance.png" width="500px"></div>
+              <p>The confusion matrix and table above show the classification result of naive bayes model. This model has similar overall accuracy compared to the random forest which are 0.73 and 0.72 respectively. The result also shows the similar pattern as the random forest that PokemonTCG has the highest prediction accuracy and PokemonSwordAndShield has the lowest. The naive bayes model has better ability to predict pokemongo and pokemon, but has lower prediction accuracy in pokemontrades. Considering the fact that pokemongo and pokemon are top two common labels in the training data, we think the ability to predict pokemon and pokemongo is more important than predicting pokemontrades. Although the accuracy of predicting PokemonSwordAndShield is low, the naive bayes has higher f-1 score which is 0.44 than that of the logistic regression which is 0.36. This indicates that the naive bayes model has higher overall accuracy in predicting PokemonSwordAndShield. Thus, we think the naive bayes model has better ability to predict subreddit than the logistic regression model.</p>
+              <iframe src="../data/plots/text_classification_nb.html" frameborder="0" width="100%" height="450"></iframe>
+              <div style="text-align: center; color: black" ><strong>Figure 4. &nbsp Confusion matrix of Naive Bayes model</strong></div>
+              </td>
+          </tr>
+      </tbody></table><br>
+      
+      <ul><li><h6 class="mb-4"><strong>Random Forest</strong></h6></li></ul>
+        <table width=100%>
+          <tbody><tr>
+            <td>
+              <div style="text-align: center; color: black" ><strong>Tabel 7. &nbsp Random Forest model performance</strong></div>
+              <div style="text-align: center;"><img src="../data/plots/text_rf_performance.png" width="500px"></div>
+              <p>The random forest doesn’t show promising ability to classify subreddits compared to previous models. It even has no ability to correctly predict PokemonSwordAndShield. All three models have significantly high precision in predicting PokemonTCG. The PokemonTCG is about the trading card game which is distinctive from other Pokemon products, so we speculate that special contents of this subreddit make it easy for the model to predict. The model has the worst ability to predict PokemonSwordAndShield among all subreddits. The PokemonSwordAndShield has a lot of overlaps with pokemon and pokemongo, making it similar with other subreddits. Thus, the model fails to distinguish PokemonSwordAndShield from other subreddits.</p>
+            </td>
+          </tr>
+      </tbody></table><br>
+
+
+      <!-- Q9  -->
+      <br><ul><h4 class="mb-4"><li>Time Series Analysis</li></h4></ul>
+      <div class="card">
+        <div class="card-header">
+          <strong>Related Questions</strong>
+        </div>
+        <div class="card-body">
+          <h5 class="mb-4">9. Can we use number of posts in Pokémon subreddits to predict the stock price of Nintendo?</h5>
+          <p class="card-text">In this section, we train a time series model VAR to predict number of comments in Pokémon subreddits and Nintendo stock price. We follow the proposed technical methods. The result model has very bad performance in predicting number of comments in subreddits but show some ability to forecast Nintendo stock price and trading volume.</p>
+        </div>
+      </div>
+      <br>
+      <table width=100%>
+        <tbody><tr>
+          <td>
+            <iframe src="../data/plots/stock_forecast.html" frameborder="0" width="100%" height="450"></iframe>
+            <div style="text-align: center; color: black" ><strong>Figure 5. &nbsp Forecast of future 10 days Nintendo stock price</strong></div>
+            <p>To investigate if it's possible to use number of posts in Pokémon subreddits to predict the stock price of Nintendo, we train a vector autoregressive (VAR) model to predict number of comments in Pokémon subreddits and stock price. The plot above shows the forecast stock price by the model vs. actual stock price and table shows multiple metrics to evaluate forecast results. The actual stock price fluctuates during the predicted 10-day period which has several sudden changes from Aug 23 to Aug 26. The model cannot predict these changes and can only capture the trend of the stock. The metrics table shows that the model has very poor ability to predict number of comments in subreddits and it's surprising to see that the accuracy of predicting stock price is much higher. This may indicate that the number of comments in Pokémon subreddits have more randomness than the stock price, so it's very difficult for time series model to capture patterns. The RMSE of the predicted stock price is about 0.4206 which is about 3.6% of total stock price. Although the error seems small, we think it's not good enough considering the short period of prediction. Thus, we do not recommend using this model to guide the investment strategy.</p>
+            <div style="text-align: center; color: black" ><strong>Tabel 8. &nbsp VAR Model evaluation for stock prediction</strong></div>
+            <div style="text-align: center;"><img src="../data/plots/metrics_table.png" width="630px"></div>
+            <p></p>
+          </td>
+        </tr>
+    </tbody></table><br>
+
+
+
+    
+    
+    
+      </div>
+		</div>
+
+    <script src="../website-source/js/jquery.min.js"></script>
+    <script src="../website-source/js/popper.js"></script>
+    <script src="../website-source/js/bootstrap.min.js"></script>
+    <script src="../website-source/js/main.js"></script>
+
+  </body>
+</html>
